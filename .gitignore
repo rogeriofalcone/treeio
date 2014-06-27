@@ -3,5 +3,6 @@
 core/db/dbsettings.json
 .*.swp
 treeio.db
+dev.sqlite3
 doc/_build
 build/*
