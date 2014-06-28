@@ -60,7 +60,8 @@ OAUTH_DATA_STORE = 'treeio.core.api.auth.store.store'
 
 # Static files location for Tree.io
 STATIC_ROOT = path.join(PROJECT_ROOT, 'static')
-STATIC_URL = path.join(PROJECT_ROOT, 'static/')
+#STATIC_URL = path.join(PROJECT_ROOT, 'static/')
+STATIC_URL = '/static/'
 STATIC_DOC_ROOT = path.join(PROJECT_ROOT, 'static')
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
@@ -161,6 +162,7 @@ INSTALLED_APPS = (
     'django.contrib.markup',
     'django_websocket',
     'django.contrib.messages',
+    #'django.contrib.staticfiles',
     'treeio.account',
     'treeio.core',
     'treeio.core.api',
